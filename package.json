@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot-team-algorithm",
+  "version": "1.0.0",
+  "description": "Discord bot for team The Algorithm",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlo0612/Discord-Bots.git"
+  },
+  "author": "Alex Lo",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/alexlo0612/Discord-Bots/issues"
+  },
+  "homepage": "https://github.com/alexlo0612/Discord-Bots#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
