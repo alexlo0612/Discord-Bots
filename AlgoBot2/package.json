@@ -1,0 +1,14 @@
+{
+  "name": "algobot2",
+  "version": "1.0.0",
+  "description": "algobot in my discord server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Lo",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
