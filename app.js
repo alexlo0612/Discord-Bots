@@ -38,7 +38,11 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content === "Am I the Admin") {
     message.channel.send(
-      message.member.roles.some(find => ["@Owner"].includes(find.name))
+      message.member.roles.some(find =>
+        ["@Owner", "@Programmer", "@Back-End Dev.", "@Front-End Dev."].includes(
+          find.name
+        )
+      )
     );
   }
 });
@@ -58,7 +62,12 @@ client.on("message", message => {
 client.on("message", message => {
   if (
     message.content === "ping" &&
-    message.member.roles.some(role => ["@Owner"].includes(role.name) == true)
+    message.member.roles.some(
+      role =>
+        ["@Owner", "@Programmer", "@Back-End Dev.", "@Front-End Dev."].includes(
+          role.name
+        ) == true
+    )
   ) {
     message.channel.send("Pong!");
   }
