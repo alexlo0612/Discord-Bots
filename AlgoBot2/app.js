@@ -62,7 +62,7 @@ client.on('message', message => {
 //Respond to Ping only if the sender is Mod or ME!
 client.on('message', message => {
   if (
-    message.author.username === 'alexlo0612' ||
+    message.author.username === 'alexlo0612' &&
     (message.content === 'ping' &&
       message.member.roles.some(
         role =>
