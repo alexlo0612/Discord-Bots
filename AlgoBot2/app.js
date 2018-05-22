@@ -39,11 +39,9 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content === 'am i the admin') {
     message.channel.send(
-      message.member.roles.some(find =>
-        ['Owner', 'Programmer', 'Back-End Dev.', 'Front-End Dev.'].includes(
-          find.name
-        )
-      )
+      message.member.roles.some(find => ['Owner', 'Programmer', 'Back-End Dev.', 'Front-End Dev.'].includes(
+        find.name
+      ))
     );
   }
 });
@@ -65,10 +63,9 @@ client.on('message', message => {
     message.author.username === 'alexlo0612' &&
     (message.content === 'ping' &&
       message.member.roles.some(
-        role =>
-          ['Owner', 'Programmer', 'Back-End Dev.', 'Front-End Dev.'].includes(
-            role.name
-          ) == true
+        role => ['Owner', 'Programmer', 'Back-End Dev.', 'Front-End Dev.'].includes(
+          role.name
+        ) == true
       ))
   ) {
     message.channel.send('Pong!');
